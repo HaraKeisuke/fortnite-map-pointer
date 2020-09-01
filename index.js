@@ -29,7 +29,7 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = "NzUwMzQyOTE1MjY3NDkzOTQ5.X05JSw.ZJSqVkasFWnlfEpMctFM0UCk4Y0";
+const token = process.env.token;
 
 const points = [...new Array(16)].map((_, i) => i + 1);
 
