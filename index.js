@@ -42,10 +42,10 @@ client.on("message", (message) => {
     return;
   }
   //↓ここに後述のコードをコピペする↓
-  if (message.content === "/ramdom" || message.content === "/r") {
+  if (message.content === "/random" || message.content === "/r") {
     message.channel
       .send("Your Point is...", {
-        file: "/" + Math.floor(Math.random(n)) + "jpg",
+        file: "/" + Math.floor(Math.random(points.length)) + "jpg",
       })
       .catch(console.error);
     return;
