@@ -6,6 +6,9 @@
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "cross-env": "^7.0.2",
     "discord.js": "12.3.1",
