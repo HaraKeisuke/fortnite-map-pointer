@@ -22,10 +22,9 @@ client.on("message", (message) => {
       "https://storage.googleapis.com/fortnite-map-pointer/" + point + ".jpg"
     );
     message.channel.send(attachment);
+
+    console.log("New Point", new Date().toLocaleString());
     return;
-  }
-  if (message.content.match(/discord.gg/)) {
-    message.delete(100);
   }
 });
 client.login(token);
